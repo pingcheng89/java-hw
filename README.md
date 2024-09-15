@@ -1,6 +1,5 @@
 ## Sorting
-- 需輸入參數來決定順序或倒序：
-  1.0是順序；1是倒序
+- 需輸入參數來決定順序或倒序：0是順序；1是倒序
 ```
 java -cp com.systex.main-0.0.1-SNAPSHOT.jar com.systex.main.Sorting 數字
 ```
