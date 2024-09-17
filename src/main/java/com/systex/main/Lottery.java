@@ -1,10 +1,8 @@
 package com.systex.main;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Lottery {
 
@@ -22,7 +20,7 @@ public class Lottery {
         }
 		
 		for(int i =1 ; i<=group ; i++) {
-			HashSet<Integer> lotteryNum = new HashSet<>();
+			Set<Integer> lotteryNum = new TreeSet<>();
 			while (lotteryNum.size() < 6) {
 	            int num = (int) (Math.random() * 49) + 1;
 	            
@@ -30,10 +28,8 @@ public class Lottery {
 	                lotteryNum.add(num);
 	            }
 	        }
-			List<Integer> sortedLotteryNum = new ArrayList<>(lotteryNum);
-	        Collections.sort(sortedLotteryNum);
 			System.out.print("第"+i+"組號碼為：");
-			System.out.println(sortedLotteryNum.toString());
+			System.out.println(lotteryNum.toString());
 		}
 	}
 }
